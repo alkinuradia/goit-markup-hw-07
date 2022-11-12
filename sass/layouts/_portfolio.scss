@@ -27,21 +27,21 @@
     padding-left: 24px;
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	transform: translateY(100%);
+	.portfolio-item .link:hover &,
+	.portfolio-item .link:focus & {
+	transform: translateY(0);
+}
 }
 .portfolio-item .link {
 	display: block;
 	text-decoration: none;
 	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-item .link:hover,
-.portfolio-item .link:focus {
+	&:hover,
+    &:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-.portfolio-item .link:hover .portfolio-top-text,
-.portfolio-item .link:focus .portfolio-top-text {
-	transform: translateY(0);
 }
+
 .examples {
 	padding: 20px 24px;
     width: 370px;

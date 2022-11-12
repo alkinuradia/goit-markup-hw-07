@@ -53,12 +53,28 @@ span {
 	text-decoration: none;
 
 	transition: var(--main-transition);
-}
-
-.header-item-link:hover,
-.header-item-link:focus {
+	&:hover,
+	&:focus {
 	color: var(--main-bg-color);
 }
+	&.current {
+	color: var(--main-bg-color);
+	position: relative;
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		height: 4px;
+		width: 100%;
+		border-radius: 2px;
+		left: 0;
+		bottom: -33px;
+		background-color: var(--main-bg-color);
+	}
+}
+}
+
+
 
 .header-mail,
 .header-tel {
@@ -74,38 +90,22 @@ span {
 	gap: 10px;
 
 	transition: var(--main-transition);
+	&:hover,
+	&:focus {
+	color: var(--main-bg-color);
+}
 }
 
 .contact-icon {
 	fill: var(--main-color);
     transition: var(--fill-transition);
-}
-.header-item-link.current {
-	color: var(--main-bg-color);
-	position: relative;
-}
-
-.header-item-link.current::after {
-    content: '';
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    border-radius: 2px;
-    left: 0;
-	bottom: -33px;
-    background-color: var(--main-bg-color);
-}
-
-.header-tel:hover,
-.header-tel:focus,
-.header-mail:hover,
-.header-mail:focus {
-	color: var(--main-bg-color);
-}
-.header-tel:hover .contact-icon,
-.header-tel:focus .contact-icon,
-.header-mail:hover .contact-icon,
-.header-mail:focus .contact-icon{
+	.header-tel:hover &,
+	.header-tel:focus &,
+	.header-mail:hover &,
+	.header-mail:focus & {
 	fill: var(--main-bg-color);
 }
+}
+
+
+

@@ -38,12 +38,12 @@
 .footer-soc-icon {
 	fill: var(--accent-color);
 	transition: var(--fill-transition);
+	.footer-soc-link:hover &,
+	.footer-soc-link:focus & {
+	fill: var(--accent-color);
+}
 }
 .footer-soc-link:hover,
 .footer-soc-link:focus {
 	background-color: var(--main-bg-color);
-}
-.footer-soc-link:hover .footer-soc-icon,
-.footer-soc-link:focus .footer-soc-icon {
-	fill: var(--accent-color);
 }
