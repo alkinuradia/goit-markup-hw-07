@@ -1,8 +1,8 @@
 
-.footer-subscription {
+.subscription {
 	margin-left: auto;
 }
-.footer-text {
+.subscription__text {
 	font-family: inherit;
 	font-style: normal;
 	font-weight: 700;
@@ -14,7 +14,7 @@
 	color: var(--accent-color);
 }
 
-.form-subscription {
+.subscription__form {
     display: flex;
     align-items: baseline;
 }

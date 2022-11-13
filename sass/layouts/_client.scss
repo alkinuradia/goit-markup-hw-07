@@ -1,5 +1,5 @@
 
-.client-title {
+.client__title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 0.86;
@@ -8,15 +8,15 @@
 	color: var(--secondary-color);
 	margin-bottom: 50px;
 }
-.client-list {
+.icon-list {
 	display: flex;
 	gap: 30px;
 }
-.client-item {
+.icon-list__item {
 	width: calc((100% - 150px) / 6);
 	height: 90px;
 }
-.client-link {
+.icon-list__link {
 	width: 100%;
 	height: 100%;
 	border: 1px solid #AFB1B8;
@@ -30,11 +30,11 @@
 	border-color: var(--main-bg-color);
 }
 }
-.client-icon {
+.icon-list__icon {
 	fill: #AFB1B8;
 	transition: var(--fill-transition);
-	.client-link:hover &,
-	.client-link:focus & {
+	.icon-list__link:hover &,
+	.icon-list__link:focus & {
 	fill: var(--main-bg-color);
 }
 }

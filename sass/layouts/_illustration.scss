@@ -2,7 +2,7 @@
 .illustration {
 	padding-top: 0;
 }
-.illustration-title {
+.illustration__title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -15,10 +15,10 @@
 	display: flex;
 	gap: 30px;
 }
-.illustration-item{
+.illustration-list__item {
 	position: relative;
 }
-.illustration-container{
+.illustration-list__wrap {
 	position: absolute;
     bottom: 0;
     width: 100%;
@@ -26,7 +26,7 @@
     background-color: rgba(47, 48, 58, 0.8);
 
 }
-.illustration-text{
+.illustration-list__text {
     font-family: inherit;
 	font-weight: 700;
 	font-size: 14px;

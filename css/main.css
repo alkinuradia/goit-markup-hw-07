@@ -90,17 +90,17 @@ body {
   padding: 25px 0 24px 0;
 }
 
-.header-navigation {
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.header-list {
+.menu {
   display: flex;
   gap: 50px;
 }
 
-.header-logo {
+.navigation__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -111,7 +111,7 @@ body {
   margin-right: 93px;
 }
 
-.header-contact {
+.connect {
   display: flex;
   align-items: center;
   gap: 50px;
@@ -127,7 +127,7 @@ span {
   text-decoration: none;
 }
 
-.header-item-link {
+.menu__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -136,14 +136,14 @@ span {
   text-decoration: none;
   transition: var(--main-transition);
 }
-.header-item-link:hover, .header-item-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--main-bg-color);
 }
-.header-item-link.current {
+.menu__link.current {
   color: var(--main-bg-color);
   position: relative;
 }
-.header-item-link.current::after {
+.menu__link.current::after {
   content: "";
   display: block;
   position: absolute;
@@ -155,8 +155,8 @@ span {
   background-color: var(--main-bg-color);
 }
 
-.header-mail,
-.header-tel {
+.connect__mail,
+.connect__tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -169,17 +169,17 @@ span {
   gap: 10px;
   transition: var(--main-transition);
 }
-.header-mail:hover, .header-mail:focus,
-.header-tel:hover,
-.header-tel:focus {
+.connect__mail:hover, .connect__mail:focus,
+.connect__tel:hover,
+.connect__tel:focus {
   color: var(--main-bg-color);
 }
 
-.contact-icon {
+.connect__icon {
   fill: var(--main-color);
   transition: var(--fill-transition);
 }
-.header-tel:hover .contact-icon, .header-tel:focus .contact-icon, .header-mail:hover .contact-icon, .header-mail:focus .contact-icon {
+.header-tel:hover .connect__icon, .header-tel:focus .connect__icon, .header-mail:hover .connect__icon, .header-mail:focus .connect__icon {
   fill: var(--main-bg-color);
 }
 
@@ -196,7 +196,7 @@ span {
   text-align: center;
   padding: 200px 0;
 }
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -207,7 +207,7 @@ span {
   margin: 0 auto 30px auto;
 }
 
-.button-primary {
+.hero__btn {
   font-family: "Roboto", sans-serif;
   color: var(--accent-color);
   background-color: var(--main-bg-color);
@@ -225,7 +225,7 @@ span {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.button-primary:active {
+.hero__btn:active {
   color: var(--accent-color);
   background-color: #188ce8;
 }
@@ -233,7 +233,8 @@ span {
 .section {
   padding: 94px 0;
 }
-.section-subtitle {
+
+.pic-list__subtitle {
   font-family: inherit;
   font-weight: 700;
   font-size: 14px;
@@ -243,21 +244,25 @@ span {
   color: var(--secondary-color);
   margin-bottom: 10px;
 }
-.section-text {
+
+.pic-lis__text {
   font-family: inherit;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.section-list {
+
+.pic-list {
   display: flex;
   gap: 30px;
 }
-.section-item {
+
+.pic-list__item {
   width: 270px;
 }
-.section-item::before {
+
+.pic-list__item::before {
   display: block;
   content: "";
   height: 120px;
@@ -289,7 +294,7 @@ span {
   padding-top: 0;
 }
 
-.illustration-title {
+.illustration__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -304,11 +309,11 @@ span {
   gap: 30px;
 }
 
-.illustration-item {
+.illustration-list__item {
   position: relative;
 }
 
-.illustration-container {
+.illustration-list__wrap {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -316,7 +321,7 @@ span {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.illustration-text {
+.illustration-list__text {
   font-family: inherit;
   font-weight: 700;
   font-size: 14px;
@@ -339,7 +344,7 @@ span {
   width: 270px;
 }
 
-.team-card {
+.card {
   background: var(--accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -349,7 +354,7 @@ span {
   padding-bottom: 30px;
 }
 
-.team-title {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -358,7 +363,7 @@ span {
   margin-bottom: 50px;
 }
 
-.team-surname {
+.card__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -367,25 +372,25 @@ span {
   margin-bottom: 10px;
 }
 
-.team-speciality {
+.card__after-title {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
 
-.team-soc-list {
+.soc-list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.team-soc-iteam {
+.soc-list__item {
   width: 44px;
   height: 44px;
 }
 
-.team-soc-link {
+.soc-list__link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -394,19 +399,19 @@ span {
   justify-content: center;
   transition: var(--main-transition), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-soc-link:hover, .team-soc-link:focus {
+.soc-list__link:hover, .soc-list__link:focus {
   background-color: var(--main-bg-color);
 }
 
-.team-soc-icon {
+.soc-list__icon {
   fill: #AFB1B8;
   transition: var(--fill-transition);
 }
-.team-soc-link:hover .team-soc-icon, .team-soc-link:focus .team-soc-icon {
+.soc-list__link:hover .soc-list__icon, .soc-list__link:focus .soc-list__icon {
   fill: var(--accent-color);
 }
 
-.client-title {
+.client__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 0.86;
@@ -416,17 +421,17 @@ span {
   margin-bottom: 50px;
 }
 
-.client-list {
+.icon-list {
   display: flex;
   gap: 30px;
 }
 
-.client-item {
+.icon-list__item {
   width: calc((100% - 150px) / 6);
   height: 90px;
 }
 
-.client-link {
+.icon-list__link {
   width: 100%;
   height: 100%;
   border: 1px solid #AFB1B8;
@@ -436,15 +441,15 @@ span {
   justify-content: center;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-link:hover, .client-link:focus {
+.icon-list__link:hover, .icon-list__link:focus {
   border-color: var(--main-bg-color);
 }
 
-.client-icon {
+.icon-list__icon {
   fill: #AFB1B8;
   transition: var(--fill-transition);
 }
-.client-link:hover .client-icon, .client-link:focus .client-icon {
+.icon-list__link:hover .icon-list__icon, .icon-list__link:focus .icon-list__icon {
   fill: var(--main-bg-color);
 }
 
@@ -506,7 +511,7 @@ span {
   gap: 70px;
 }
 
-.soc-text {
+.footer-soc__text {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -518,18 +523,18 @@ span {
   margin-bottom: 16px;
 }
 
-.footer-soc-list {
+.footer-list {
   display: flex;
   gap: 10px;
   justify-content: center;
 }
 
-.footer-soc-item {
+.footer-list__item {
   width: 44px;
   height: 44px;
 }
 
-.footer-soc-link.link {
+.footer-list__link.link {
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.1);
@@ -540,24 +545,24 @@ span {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-soc-icon {
+.footer-list__icon {
   fill: var(--accent-color);
   transition: var(--fill-transition);
 }
-.footer-soc-link:hover .footer-soc-icon, .footer-soc-link:focus .footer-soc-icon {
+.footer-list__link:hover .footer-list__icon, .footer-list__link:focus .footer-list__icon {
   fill: var(--accent-color);
 }
 
-.footer-soc-link:hover,
-.footer-soc-link:focus {
+.footer-list__link:hover,
+.footer-list__link:focus {
   background-color: var(--main-bg-color);
 }
 
-.footer-subscription {
+.subscription {
   margin-left: auto;
 }
 
-.footer-text {
+.subscription__text {
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -569,7 +574,7 @@ span {
   color: var(--accent-color);
 }
 
-.form-subscription {
+.subscription__form {
   display: flex;
   align-items: baseline;
 }
@@ -635,7 +640,7 @@ span {
   gap: 8px;
 }
 
-.navigation-button {
+.navigation-list__btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -649,7 +654,7 @@ span {
   text-align: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), var(--main-transition), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation-button:hover, .navigation-button:focus {
+.navigation-list__btn:hover, .navigation-list__btn:focus {
   color: var(--accent-color);
   background-color: var(--main-bg-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);

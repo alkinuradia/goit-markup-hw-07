@@ -1,6 +1,7 @@
 .section {
 	padding: 94px 0;
-	&-subtitle {
+  }
+  .pic-list__subtitle {
 	font-family: inherit;
 	font-weight: 700;
 	font-size: 14px;
@@ -9,33 +10,32 @@
 	text-transform: uppercase;
 	color: var(--secondary-color);
 	margin-bottom: 10px;
-}
-    &-text {
+  }
+  .pic-lis__text {
 	font-family: inherit;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
-}
-    &-list {
+  }
+  .pic-list {
 	display: flex;
 	gap: 30px;
-}
-    &-item {
+  }
+  .pic-list__item {
 	width: 270px;
-	&::before {
-		display: block;
-		content: "";
-		height: 120px;
-		background-size: 70px;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-color: #F5F4FA;
-		margin-bottom: 30px;
-		border-radius: 4px;
-	}
-}
-}
+  }
+  .pic-list__item::before {
+	display: block;
+	content: "";
+	height: 120px;
+	background-size: 70px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #F5F4FA;
+	margin-bottom: 30px;
+	border-radius: 4px;
+  }
 
 .icon-antenna::before {
 	background-image: url(../image/antenna.svg);
